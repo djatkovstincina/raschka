@@ -52,10 +52,15 @@ document.getElementById('upload-form').addEventListener('submit', async function
   formData.append('epsFile', file);
 
   try {
-    const response = await fetch('/convert', {
+    // const response = await fetch('/convert', {
+    //   method: 'POST',
+    //   body: formData
+    // });
+
+    const response = await fetch('/api/convert', {
       method: 'POST',
       body: formData
-    });
+    });    
 
     if (response.ok) {
       const result = await response.json();

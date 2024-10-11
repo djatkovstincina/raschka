@@ -654,10 +654,6 @@ video {
   list-style-position: inside;
 }
 
-.list-none {
-  list-style-type: none;
-}
-
 .list-decimal {
   list-style-type: decimal;
 }
@@ -747,14 +743,14 @@ video {
   line-height: 2.25rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
