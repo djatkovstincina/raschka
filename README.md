@@ -39,7 +39,7 @@ package.json # Project dependencies and scripts
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/raschka.git
+   git clone https://github.com/djatkovstincina/raschka.git
    cd raschka
    ```
 
