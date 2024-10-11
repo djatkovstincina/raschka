@@ -62,10 +62,10 @@ document.getElementById('upload-form').addEventListener('submit', async function
       });
 
       // Animate each text element by adding a yellow border
-      textElements.forEach(el => {
-        el.style.stroke = 'yellow';
-        el.style.strokeWidth = '2';
-      });
+      // textElements.forEach(el => {
+      //   el.style.stroke = 'yellow';
+      //   el.style.strokeWidth = '2';
+      // });
 
       // Create a new Blob to allow download of the modified SVG
       const updatedSvg = new XMLSerializer().serializeToString(svgDoc.documentElement);
