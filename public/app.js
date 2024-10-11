@@ -51,16 +51,16 @@ document.getElementById('upload-form').addEventListener('submit', async function
   const formData = new FormData();
   formData.append('epsFile', file);
 
-  try {
-    // const response = await fetch('/convert', {
-    //   method: 'POST',
-    //   body: formData
-    // });
+  // Detect if the app is running locally or on Vercel
+  const apiUrl = window.location.hostname.includes('localhost') 
+    ? '/convert' // Local endpoint
+    : '/api/convert'; // Vercel endpoint
 
-    const response = await fetch('/api/convert', {
+  try {
+    const response = await fetch(apiUrl, {
       method: 'POST',
       body: formData
-    });    
+    });
 
     if (response.ok) {
       const result = await response.json();
